@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <style>
+        body { display: flex; min-height: 100vh; overflow-x: hidden; }
+        #sidebar { min-width: 250px; background: #343a40; color: white; transition: 0.3s; }
+        #content { flex: 1; padding: 20px; background: #f8f9fa; }
+        .nav-link { color: rgba(255,255,255,.75); }
+        .nav-link:hover { color: white; }
+    </style>
+</head>
+<body>
+    <div id="sidebar" class="d-flex flex-column p-3">
+        <h3>Admin Panel</h3>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="#" class="nav-link active">Dashboard</a>
+            </li>
+            
+        </ul>
+    </div>
+
+    <div id="content">
+        @RenderBody()
+    </div>
+</body>
+</html>
